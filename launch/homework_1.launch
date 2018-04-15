@@ -1,0 +1,5 @@
+<launch>
+	<node name="pub_student" pkg="homework_1" type="pub_student" output="screen"/>
+	<node name="keyboard_pub" pkg="homework_1" type="keyboard_pub" output="screen"/>
+	<node name="Listener_Msg" pkg="homework_1" type="Listener_Msg" output="screen"/>
+</launch>
