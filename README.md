@@ -12,7 +12,8 @@ Utilizzando le guide proposte durante il corso è stato sviluppato il seguente p
 
 homework_1/msg/ 
 Keyboard.msg (Gestione Input da Tastiera)
-- uint8 
+- uint8
+- string msg
 homework_1/Studente.msg (Gestione dei dati relativi allo studente)
 - string nome_studente - rappresentazione del nome dello studente
 - uint8 eta - rappresentazione dell'età dello studente                     
