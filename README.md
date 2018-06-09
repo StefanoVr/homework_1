@@ -10,12 +10,11 @@ roslaunch homework_1 homework_1.launch
 # Dettagli
 Utilizzando le guide proposte durante il corso è stato sviluppato il seguente progetto.
 
-homework_1/msg/ 
-Keyboard.msg (Gestione Input da Tastiera)
+homework_1/msg/Keyboard.msg (Gestione Input da Tastiera)
 - uint8
 - string msg
 
-homework_1/Studente.msg (Gestione dei dati relativi allo studente)
+homework_1/msg/Studente.msg (Gestione dei dati relativi allo studente)
 - string nome_studente - rappresentazione del nome dello studente
 - uint8 eta - rappresentazione dell'età dello studente                     
 - string corso - rappresentazione del corso
@@ -31,9 +30,9 @@ Warning: la gestione dell'input è stata realizzata tenendo conto che la funzion
 tastiera non sia bloccante - inteso che basta digitare il uno dei tasti richiesti per eseguir
 l'operazione di input.
 
-pub_student.cpp -> Gestione delle informazioni relative allo studente
+homework_1/src/pub_student.cpp (Gestione delle informazioni relative allo studente)
 
-Listener_Msg    -> Gestione dell'ascoltatore e produzione dell'output a video
+homework_1/src/Listener_Msg (Gestione dell'ascoltatore e produzione dell'output a video)
 
 ```
 (Publisher) keyboard_pub  -> (topic) msg_cmd
