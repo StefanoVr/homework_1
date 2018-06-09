@@ -21,15 +21,17 @@ homework_1/Studente.msg (Gestione dei dati relativi allo studente)
 
 homework_1/src/
 keyboard_pub.cpp (Gestione input da tastiera) 
-- a: tutta la stringa; 
-- c: corso; 
-- e: età dello studente; 
-- n: nome dello studente. 
+- a: tutta la stringa
+- c: corso 
+- e: età dello studente
+- n: nome dello studente
+
 Warning: la gestione dell'input è stata realizzata tenendo conto che la funzione di input da
 tastiera non sia bloccante - inteso che basta digitare il uno dei tasti richiesti per eseguir
 l'operazione di input.
 
 pub_student.cpp -> Gestione delle informazioni relative allo studente
+
 Listener_Msg    -> Gestione dell'ascoltatore e produzione dell'output a video
 
 ```
