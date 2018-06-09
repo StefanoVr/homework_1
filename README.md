@@ -11,7 +11,7 @@ roslaunch homework_1 homework_1.launch
 Utilizzando le guide proposte durante il corso è stato sviluppato il seguente progetto.
 
 homework_1/msg/ 
-Keyboard.msg -> Gestione Input da Tastiera 
+Keyboard.msg (Gestione Input da Tastiera)
 - uint8; 
 homework_1/Studente.msg (Gestione dei dati relativi allo studente)
 - string nome_studente - rappresentazione del nome dello studente
