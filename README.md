@@ -14,14 +14,14 @@ homework_1/msg/
 Keyboard.msg (Gestione Input da Tastiera)
 - uint8
 - string msg
+
 homework_1/Studente.msg (Gestione dei dati relativi allo studente)
 - string nome_studente - rappresentazione del nome dello studente
 - uint8 eta - rappresentazione dell'età dello studente                     
 - string corso - rappresentazione del corso
 - string testo_concat - rappresentazione della stringa intera
 
-homework_1/src/
-keyboard_pub.cpp (Gestione input da tastiera) 
+homework_1/src/keyboard_pub.cpp (Gestione input da tastiera) 
 - a: tutta la stringa
 - c: corso 
 - e: età dello studente
