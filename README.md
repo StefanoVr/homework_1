@@ -8,20 +8,24 @@ Corso di Robotica - Laboratorio Ciberfisico
 roslaunch homework_1 homework_1.launch
 ```
 # DETTAGLI
-Utilizzando le guide proposte durante il corso è stato sviluppato il seguente progetto.
+Utilizzando le guide proposte durante il corso è stato sviluppato il seguente progetto
+[TESTO HOMEWORK1](http://profs.scienze.univr.it/~bloisi/corsi/homework/homework-1.pdf)
 
-## /msg/Keyboard.msg (Gestione Input da Tastiera)
+## /msg/Keyboard.msg
+Gestione del messaggio
 - uint8
 - string msg
 
 ## /msg/Studente.msg 
 Gestione dei dati relativi allo studente
+
 - string nome_studente - rappresentazione del nome dello studente
 - uint8 eta - rappresentazione dell'età dello studente                     
 - string corso - rappresentazione del corso
 - string testo_concat - rappresentazione della stringa intera
 
-## /src/keyboard_pub.cpp (Gestione input da tastiera) 
+## /src/keyboard_pub.cpp
+Stampa nel topic i caratteri inseriti da tastiera
 - a: tutta la stringa
 - c: corso 
 - e: età dello studente
@@ -31,13 +35,12 @@ Gestione dei dati relativi allo studente
 (Publisher) keyboard_pub  -> (topic) msg_cmd
 ```
 
-Warning: la gestione dell'input è stata realizzata tenendo conto che la funzione di input da
-tastiera non sia bloccante - inteso che basta digitare il uno dei tasti richiesti per eseguir
-l'operazione di input.
+> Warning: la gestione dell'input è stata realizzata tenendo conto che la funzione di input da
+> tastiera non sia bloccante - inteso che basta digitare il uno dei tasti richiesti per eseguir
+> l'operazione di input.
 
 ## /src/pub_student.cpp 
 Stampa dei dati relativi allo studente
-
 ```
 (Publisher) pub_student   -> (topic) msg_dati
 ```
