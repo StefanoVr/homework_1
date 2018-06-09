@@ -7,19 +7,19 @@ Corso di Robotica - Laboratorio Ciberfisico
 ```
 roslaunch homework_1 homework_1.launch
 ```
-Dettagli:
+# Dettagli
 Utilizzando le guide proposte durante il corso è stato sviluppato il seguente progetto.
 
 homework_1/msg/ 
-'Keyboard.msg' -> Gestione Input da Tastiera 
+Keyboard.msg -> Gestione Input da Tastiera 
 - uint8; 
-'Studente.msg' -> Gestione dei dati relativi allo studente 
+homework_1/Studente.msg -> Gestione dei dati relativi allo studente 
 - string nome_studente - rappresentazione del nome dello studente
 - uint8 eta - rappresentazione dell'età dello studente                     
 - string corso - rappresentazione del corso
 - string testo_concat - rappresentazione della stringa intera
-/src/
-'keyboard_pub.cpp' # Gestione input da tastiera 
+homework_1/src/
+keyboard_pub.cpp -> Gestione input da tastiera 
 'a' -> tutta la stringa; 
 'c' -> corso; 
 'e' -> età dello studente; 
@@ -27,8 +27,8 @@ homework_1/msg/
 Warning: la gestione dell'input è stata realizzata tenendo conto che la funzione di input da
 tastiera non sia bloccante - inteso che basta digitare il uno dei tasti richiesti per eseguir
 l'operazione di input.
-'pub_student.cpp' -> Gestione delle informazioni relative allo studente
-'Listener_Msg'    -> Gestione dell'ascoltatore e produzione dell'output a video
+pub_student.cpp -> Gestione delle informazioni relative allo studente
+Listener_Msg    -> Gestione dell'ascoltatore e produzione dell'output a video
 
 (Publisher) keyboard_pub  -> (topic) msg_cmd 
 (Publisher) pub_student   -> (topic) msg_dati 
