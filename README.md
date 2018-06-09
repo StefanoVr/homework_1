@@ -34,12 +34,14 @@ l'operazione di input.
 (Publisher) pub_student   -> (topic) msg_dati 
 
 Listener.msg/ 
-  Subscriber sub1 = n1.subscribe(msg_cmd, 1000, chatterCallback);
-  Subscriber sub2 = n2.subscribe(msg_dati, 1000, chatterCallback_DATA);
+Subscriber sub1 = n1.subscribe(msg_cmd, 1000, chatterCallback);
+Subscriber sub2 = n2.subscribe(msg_dati, 1000, chatterCallback_DATA);
 
 NOTE:
-  L'assegnamenti di sub1 e sub2 presentano lo stesso nodo 'n1' in quanto l'iscrizione al tipic parte da un'unico Subscriber
-  (Listener_Msg.cpp) 
+L'assegnamenti di sub1 e sub2 presentano lo stesso nodo 'n1' in quanto l'iscrizione al tipic parte da un'unico Subscriber
+(Listener_Msg.cpp) 
 
-  Per stampa del grafico:
-                          ~$ rqt_graph
+Per stampa del grafico:
+```
+~$ rqt_graph
+```
