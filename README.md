@@ -3,9 +3,7 @@ Università degli Studi di Verona
 
 Corso di Robotica - Laboratorio Ciberfisico
 
-#Progetto_1 ROS - VR378035, Veraldi Stefano
-
-to EXECUTE FOLLOW THESE COMMANDS: 
+# Istruzioni
 roslaunch homework_1 homework_1.launch
 
 DETAILS:
