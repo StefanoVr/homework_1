@@ -27,8 +27,8 @@ homework_1/msg/
 Warning: la gestione dell'input è stata realizzata tenendo conto che la funzione di input da
 tastiera non sia bloccante - inteso che basta digitare il uno dei tasti richiesti per eseguir
 l'operazione di input.
-'pub_student.cpp' # Gestione delle informazioni relative allo studente
-'Listener_Msg'    # Gestione dell'ascoltatore e produzione dell'output a video
+'pub_student.cpp' -> Gestione delle informazioni relative allo studente
+'Listener_Msg'    -> Gestione dell'ascoltatore e produzione dell'output a video
 
 (Publisher) keyboard_pub  -> (topic) msg_cmd 
 (Publisher) pub_student   -> (topic) msg_dati 
