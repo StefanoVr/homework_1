@@ -10,36 +10,38 @@ roslaunch homework_1 homework_1.launch
 # DETTAGLI
 Utilizzando le guide proposte durante il corso è stato sviluppato il seguente progetto.
 
-# homework_1/msg/Keyboard.msg (Gestione Input da Tastiera)
+# /msg/Keyboard.msg (Gestione Input da Tastiera)
 - uint8
 - string msg
 
-# homework_1/msg/Studente.msg (Gestione dei dati relativi allo studente)
+# /msg/Studente.msg (Gestione dei dati relativi allo studente)
 - string nome_studente - rappresentazione del nome dello studente
 - uint8 eta - rappresentazione dell'età dello studente                     
 - string corso - rappresentazione del corso
 - string testo_concat - rappresentazione della stringa intera
 
-# homework_1/src/keyboard_pub.cpp (Gestione input da tastiera) 
+# /src/keyboard_pub.cpp (Gestione input da tastiera) 
 - a: tutta la stringa
 - c: corso 
 - e: età dello studente
 - n: nome dello studente
 
+```
+(Publisher) keyboard_pub  -> (topic) msg_cmd
+```
+
 Warning: la gestione dell'input è stata realizzata tenendo conto che la funzione di input da
 tastiera non sia bloccante - inteso che basta digitare il uno dei tasti richiesti per eseguir
 l'operazione di input.
 
-# homework_1/src/pub_student.cpp (Gestione delle informazioni relative allo studente)
+# /src/pub_student.cpp 
 Stampa dei dati relativi allo studente
 
-# homework_1/src/Listener_Msg (Gestione dell'ascoltatore e produzione dell'output a video)
-
 ```
-(Publisher) keyboard_pub  -> (topic) msg_cmd
 (Publisher) pub_student   -> (topic) msg_dati
 ```
-
+# /src/Listener_Msg
+Ascoltatore dei Topic
 ```
 Subscriber sub1 = n1.subscribe(msg_cmd, 1000, chatterCallback)
 Subscriber sub2 = n2.subscribe(msg_dati, 1000, chatterCallback_DATA)
