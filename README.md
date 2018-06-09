@@ -18,6 +18,7 @@ homework_1/Studente.msg -> Gestione dei dati relativi allo studente
 - uint8 eta - rappresentazione dell'età dello studente                     
 - string corso - rappresentazione del corso
 - string testo_concat - rappresentazione della stringa intera
+
 homework_1/src/
 keyboard_pub.cpp -> Gestione input da tastiera 
 'a' -> tutta la stringa; 
@@ -30,8 +31,8 @@ l'operazione di input.
 pub_student.cpp -> Gestione delle informazioni relative allo studente
 Listener_Msg    -> Gestione dell'ascoltatore e produzione dell'output a video
 
-(Publisher) keyboard_pub  -> (topic) msg_cmd 
-(Publisher) pub_student   -> (topic) msg_dati 
+(Publisher) keyboard_pub  -> (topic) msg_cmd
+(Publisher) pub_student   -> (topic) msg_dati
 
 Listener.msg/ 
 Subscriber sub1 = n1.subscribe(msg_cmd, 1000, chatterCallback);
@@ -45,3 +46,6 @@ Per stampa del grafico:
 ```
 ~$ rqt_graph
 ```
+# AUTORE
+Stefano Veraldi  - VR378035
+
